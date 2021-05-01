@@ -21,6 +21,8 @@ Route::get('/about', function () {
     return view('about', ['namadepan' => $nama]);
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', 'StudentsController@index');
+Route::get('/about', 'StudentsController@index');
+Route::get('/mahasiswa', 'StudentsController@index');
+
+
